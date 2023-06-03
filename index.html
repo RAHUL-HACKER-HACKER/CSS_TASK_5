@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Css Task 5</title>
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      background-color: lightgrey;
+      width: fit-content;
+    }
+    li {
+      margin-right: 10px;
+
+
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+    li a {
+      color: blue;
+      text-decoration: none;
+      font-size: 40px;
+    }
+    li:not(:last-child)::after {
+      content: "|";
+      font-size: 40px;
+      margin-left: 10px;
+      color: blue;
+    }
+    li a:hover {
+      color: white;
+    }
+    li a:hover .specific-link {
+      background-color: darkgrey;
+    }
+    div{
+      width: fit-content;
+      border: 2px solid black;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0vh auto;
+
+
+    }
+    h3{
+      margin-top: 30vh;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h3>Horizontal Navigation Bar</h3>
+  <div>
+
+  <ul>
+    <li style="background-color:#808080;"><a href="#">Home</a></li>
+    <li><a href="#">Java</a></li>
+    <li><a href="#" class="specific-link">HTML</a></li> <!-- Add class to the specific link -->
+    <li><a href="#">Css</a></li>
+    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+  </ul>
+  </div>
+</body>
+</html>
